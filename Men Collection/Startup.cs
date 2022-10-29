@@ -25,6 +25,7 @@ namespace Men_Collection
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            services.AddControllers();
             services.AddTransient<JsonProductFile>();
         }
 
@@ -52,6 +53,7 @@ namespace Men_Collection
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapRazorPages();
+                endpoints.MapControllers();
             });
         }
     }
