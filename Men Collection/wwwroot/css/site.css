@@ -1,44 +1,11 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
-#bookContainer {
-    margin-bottom: 10%;
+.card {    
+    cursor: pointer;
 }
-
-#bookImage {
-    display: block;
-    margin: 0 auto;
-    width: 90%;
-    height: 90%;
-}
-
-#bookTitle {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 20px;
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-}
-
-#quantityInput {
-    border: none;
-    width: 100%;
-    text-align: center;
-}
-
-#bookQuantity {
-    width: 45%;
-    margin-left: 5%;
-    border-top: 2px dotted grey;
-    border-bottom: 2px dotted grey;
-    display: inline-block;
-}
-
-#bookCartButton {
-    width: 45%;
-    display: inline-block;
-    border: none;
-    border-top: 2px dotted grey;
-    border-bottom: 2px dotted grey;
+.card:hover {
+    box-shadow: -2px -1px 25px -4px rgba(0,0,0,0.75);
+    transition: 0.5s;
 }
 
 #btn {

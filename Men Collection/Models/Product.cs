@@ -10,7 +10,7 @@ namespace Men_Collection.Models
     public class Product
     {
         [JsonPropertyName("id")]
-        public int book_id { get; set; }
+        public int product_id { get; set; }
 
         [JsonPropertyName("name")]
         public string name { get; set; }
@@ -18,7 +18,8 @@ namespace Men_Collection.Models
         [JsonPropertyName("image")]
         public string image { get; set; }
 
-
+        [JsonPropertyName("price")]
+        public string price { get; set; }
         public override string ToString()
         {
             return JsonSerializer.Serialize<Product>(this);
