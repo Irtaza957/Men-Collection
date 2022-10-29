@@ -5,16 +5,17 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Products</h1>
+    <h1 class="display-4">Welcome to Men's Wear Store!</h1>
 </div>
-<div class="row">
-    @foreach (var book in Model.Products)
-    {
-        <div id="bookContainer" class="col-lg-3 col-md-4 col-sm-1">
-            <img id="bookImage" style="width: 100%; height: 100%;" src="@book.image" alt="@book.name" />
-            <span id="bookTitle">@book.name</span>            
-            <span id="bookQuantity"><input id="quantityInput" type="number" name="bookQuantity" value="" placeholder="0" /></span>
-            <span id="bookCartButton"><button id="btn"><span class="fa fa-shopping-cart"></span>Add to Cart</button></span>
-        </div>
-    }
-</div>
+<form action="/Form" method="get">
+    <label for="id">Enter Book ID:</label>
+    <input id="id" type="number" name="id" value="" required />
+
+    <label for="name">Enter Book Name:</label>
+    <input id="name" type="text" name="name" value="" required />
+
+    <label for="image">Enter Book URL:</label>
+    <input id="image" type="text" name="image" value="" required />
+
+    <input type="submit" name="submit" value="Submit" />
+</form>
